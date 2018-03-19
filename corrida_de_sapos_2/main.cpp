@@ -63,7 +63,7 @@ int main (){
 	}
 
 	if (aux == 2){
-		cout << "Sapo " << corredor_1.getIdentificador() << "ganhou" << endl;
+		cout << "Sapo " << corredor_1.getIdentificador() << " ganhou" << endl;
 	}
 
 	else if (aux == 3){
