@@ -1,6 +1,15 @@
 #ifndef CORRIDA_HPP
 #define CORRIDA_HPP
 
+/**
+*@file corrida.hpp
+*@brief Arquivo .hpp para o documento corrida.cpp
+*@author Andre Ricardo
+*@since 19/03/2018
+*@date 19/03/2018
+*@version 2.0
+*/
+
 class sapo{
 	private:
 		int identificador;
