@@ -16,13 +16,13 @@
 */
 
 //@brief inicializando a variável estática
-int sapo::dist_total;
+int sapo::dist_total = 50;
 
 //@brief atribuindo o valor da variável estática e estabelecendo o get dela
-int sapo::getDist_total(){
+/*int sapo::getDist_total(){
 	dist_total = 50;
 	return dist_total;
-}
+}*/
 
 //@brief função responsável pelo pulo dos sapos
 void sapo::pular (){

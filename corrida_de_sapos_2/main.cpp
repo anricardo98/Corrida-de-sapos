@@ -20,8 +20,7 @@ int main (){
 	int y[3]; //@brief Vetor usado para receber os identificadores 
 	int i; //@brief Variável auxiliar utilizada no for
 	int aux = 0; //@brief Variável utilizada para indicar a ordem de pulo dos sapos
-	int dist_total; //@brief Variável responsável por armazenar a distância total da corrida
-	int dist_per; //@brief armazena a distância pulada pelo último sapo a pular
+	int dist_per;
 	sapo corredor_1; //@brief inicializando o primeiro sapo
 	sapo corredor_2; //@brief inicializando o segundo sapo
 	sapo corredor_3; //@brief inicializando o terceiro sapo
@@ -44,14 +43,13 @@ int main (){
         corredor_3.setDist_percorrida(x);
 
 	//@brief Recebendo os valores da distância total e zerando a distância percorrida
-	dist_total = corredor_1.getDist_total();
 	dist_per = 0;
 	
 	//@brief Reinicializando o seed
 	srand(time(NULL));
 
 	//@brief Realizando a corrida através do uso do if e armazenando a distância percorrida por aquele sapo para comparar com a total
-	while (dist_total > dist_per){
+	while (sapo::dist_total > dist_per){
 		aux++;
 		if (aux == 1){
 			corredor_1.pular();
